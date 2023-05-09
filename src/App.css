@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C6DCE4;
+    color: #233e56;
+    
+} 
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #233e56;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.todo-input {
+    outline: none;
+    background: none;
+    border: 1px solid #233e56;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    color: #233e56;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .btn{
+    border: 1px solid #233e56;
+    border-radius: 10px;
+    padding: 0.55rem;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4f789b;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn:hover{
+    background-color: #C6DCE4;
   }
-}
+
+
+  .todolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .list-item{
+    border: 1px solid #233e56;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    width: 300px;
+  }
+
+  .btn-del{
+    border: 1px solid #233e56;
+    border-radius: 10px;
+    padding: 0.55rem;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4f789b;
+  }
+
+  .btn-del:hover{
+    background-color: #C6DCE4;
+  }
+  
+  @media screen and (max-width: 418px) {
+    .list-item{
+        width: 250px;
+    }
+
+    .todo-input{
+        width: 250px;
+    }
+  }
